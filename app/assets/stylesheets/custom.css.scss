@@ -13,8 +13,9 @@ section {
 textarea {
   resize: vertical;
 }
-
-header a:link{ color:blue;text-decoration:none; }
+header a{ font-size:16px}
+header a:link{ color:white;text-decoration:none; }
+header a:visited{ color:white;text-decoration:none;}
 
 
 .center {
@@ -26,7 +27,7 @@ header a:link{ color:blue;text-decoration:none; }
 }
 
 .navbar {
-	background-color: #9D9D9D;
+	background-color: #2c2c2c;
 	overflow: visible;
 	position: fixed;
 	top: 0;
@@ -57,7 +58,7 @@ border-radius: 0;
 margin-left: 1;
 margin-bottom: 18px;
 list-style: none;
-color: #fff;
+margin-right: 20px;
 }
 
 
