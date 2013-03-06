@@ -1,3 +1,11 @@
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+$lightGray: #999;
+$grayMediumLight: #eaeaea;
+$grayLight: #999;
+/* universal */
+
 html {
   overflow-y: scroll;
 }
@@ -13,59 +21,15 @@ section {
 textarea {
   resize: vertical;
 }
-header a{ font-size:16px}
-header a:link{ color:white;text-decoration:none; }
-header a:visited{ color:white;text-decoration:none;}
-
 
 .center {
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
-
-.navbar {
-	background-color: #2c2c2c;
-	overflow: visible;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-	margin-bottom: 0;
-}
-
-
-.navbar-inner {
-padding-left: 0;
-padding-right: 0;
--webkit-border-radius: 0;
-
-border-radius: 0;
-}
-
-.navbar-inner {
-	background-color: #2c2c2c;
-	background-image: -webkit-linear-gradient(top, #333333, #222222);
-	background-repeat: repeat-x;
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.nav {
-margin-left: 1;
-margin-bottom: 18px;
-list-style: none;
-margin-right: 20px;
-}
-
-.container {
-
-}
+/* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -84,7 +48,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $grayLight;
 }
 
 p {
@@ -92,21 +56,23 @@ p {
   line-height: 1.7em;
 }
 
+
+/* header */
+
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /* footer */
@@ -114,46 +80,24 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #999;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $grayLight;
+    
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
 }
-
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 10px;
-}
-
-ul {
-  float: right;
-  list-style: none;
-}
-
-ul li {
-  float: left;
-  margin-left: 10px;
-}
-
-
-
-
-$grayMediumLight: #eaeaea;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -161,23 +105,44 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
-/* miscellaneous */
-
 .debug_dump {
   clear: both;
   float: left;
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
-  background-color: #BEBEBE
 }
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  height: auto !important;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+ }
 
 /* sidebar */
 
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayMediumLight;
+    border-top: 1px solid $grayLighter;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -199,37 +164,4 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
-}
-
-/* forms */
-
-
-.span6 {
-  margin-left: 50px;
-  margin-left: 50px;
-}
-
-input, textarea, select, .uneditable-input {
-  
-  border: 1px solid #C4E1FF;
-  width: 100%;
-  padding: 10px;
-  height: auto !important;
-  margin-bottom: 15px;
-  @include box_sizing;
-}
-
-.btn {
-  width: 25%;
-  /*background-color: blue;*/
-}
-
-
-#error_explanation {
-  color: #f00;
-  ul {
-    list-style: none;
-    margin: 0 0 18px 0;
-
-  }
 }
