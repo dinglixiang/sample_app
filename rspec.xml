@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="24" failures="0" errors="0" time="2.486924" timestamp="2014-01-08T16:15:21+08:00">
+  <properties/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages profile page " time="1.073808"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages profile page " time="0.079470"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages profile page microposts " time="0.080332"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages profile page microposts " time="0.079636"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages profile page microposts " time="0.077509"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages signup with invalid information should not create a user" time="0.228895"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages signup with valid information should create a user" time="0.099123"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages profile page " time="0.046610"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages profile page " time="0.046038"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages signup page " time="0.032016"/>
+  <testcase classname="spec.requests.user_pages_spec" name="UserPages signup page " time="0.031883"/>
+  <testcase classname="spec.requests.authentication_pages_spec" name="AuthenticationPages signin page " time="0.034354"/>
+  <testcase classname="spec.requests.authentication_pages_spec" name="AuthenticationPages signin page " time="0.029082"/>
+  <testcase classname="spec.requests.authentication_pages_spec" name="AuthenticationPages signin with invalid information " time="0.064429"/>
+  <testcase classname="spec.requests.authentication_pages_spec" name="AuthenticationPages signin with invalid information " time="0.164074"/>
+  <testcase classname="spec.requests.authentication_pages_spec" name="AuthenticationPages signin with invalid information after visiting another page " time="0.087623"/>
+  <testcase classname="spec.requests.static_pages_spec" name="Static pages Home page " time="0.029901"/>
+  <testcase classname="spec.requests.static_pages_spec" name="Static pages Home page " time="0.027780"/>
+  <testcase classname="spec.requests.static_pages_spec" name="Static pages Contact page " time="0.027901"/>
+  <testcase classname="spec.requests.static_pages_spec" name="Static pages Contact page " time="0.026241"/>
+  <testcase classname="spec.requests.static_pages_spec" name="Static pages About page " time="0.027691"/>
+  <testcase classname="spec.requests.static_pages_spec" name="Static pages About page " time="0.026200"/>
+  <testcase classname="spec.requests.static_pages_spec" name="Static pages Help page " time="0.027686"/>
+  <testcase classname="spec.requests.static_pages_spec" name="Static pages Help page " time="0.030359"/>
+</testsuite>
