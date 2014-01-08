@@ -4,6 +4,7 @@ source 'http://ruby.taobao.org'
 gem 'rails', '3.2.12'
 
 gem 'sqlite3','1.3.6'
+gem 'rspec_junit_formatter'
 gem 'bootstrap-sass', '2.0.4'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
