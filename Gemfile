@@ -3,6 +3,7 @@ source 'http://ruby.taobao.org'
 
 gem 'rails', '3.2.12'
 
+gem 'sqlite3','1.3.6'
 gem 'bootstrap-sass', '2.0.4'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
@@ -15,7 +16,6 @@ gem 'rails_kindeditor', '~> 0.3.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-	gem 'sqlite3','1.3.6'
 	gem 'rspec-rails','2.11.0'
 	gem 'annotate', '~> 2.4.1.beta'
 end
@@ -39,9 +39,6 @@ group :test do
 	gem 'factory_girl_rails', '4.1.0'
 end
 
-group :production do
-	gem 'pg','0.12.2'
-end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
